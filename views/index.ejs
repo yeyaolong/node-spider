@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <div class="app">
+            我是一个普通的萌新，萌新50连抽出了这些，请问好用吗？
+            <div class="animation-list">
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            let xhr = new XMLHttpRequest();
+            xhr.open('post', '/animation/sortBy');
+
+            let formData = new FormData();
+            formData.append('field','attention');
+            formData.append('value', 'desc');
+
+            xhr.send(formData);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 304 || (xhr.status >= 200 && xhr.status < 300)) {
+                        document.getElementsByClassName('animation-list')[0].innerHTML = xhr.responseText
+                        console.log('type: success, result: ', xhr.responseText)
+                    } else {
+                        console.log('type: error, errCode:', xhr.status)
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
