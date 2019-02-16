@@ -9,3 +9,6 @@ yeyl
 
 email:
 470080502@qq.com
+
+description:
+get animations info from BILIBILI
