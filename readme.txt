@@ -12,3 +12,5 @@ email:
 
 description:
 get animations info from BILIBILI
+
+git tracks changed
