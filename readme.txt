@@ -16,3 +16,5 @@ get animations info from BILIBILI
 Creating a new branch is quick AND simple
 
 test git branche manage
+
+test bug
