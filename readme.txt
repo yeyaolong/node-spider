@@ -12,3 +12,5 @@ email:
 
 description:
 get animations info from BILIBILI
+
+Creating a new branch is quick
