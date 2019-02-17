@@ -1,4 +1,4 @@
-功能：
+description：
 爬虫，获取bilibili新番信息
 
 frame:
@@ -14,3 +14,5 @@ description:
 get animations info from BILIBILI
 
 Creating a new branch is quick AND simple
+
+test git branche manage
